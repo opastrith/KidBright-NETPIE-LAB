@@ -135,7 +135,7 @@ void MeasureTempLightMoisture(){
       //analog_value =  analog_value*3600/4095; 
       //MT=0% analog_value = 4095: MT=100% analog_value = 1000
       
-      float moisture= 132-132*1000*analog_value/3095;
+      float moisture= 132-100*analog_value/3095;
        currentMoisture =  moisture;
   /*    
    for (int8_t x=7; x>=-126; x--) {
